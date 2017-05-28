@@ -1,0 +1,18 @@
+<div style="margin: 20px; border: 1px black solid">
+  <div>
+    <h2>
+      Parent Component
+    </h2>
+    <div>
+      <span>{{currentDateTime}}</span>
+    </div>
+    <div>
+      <button (click)="showHideChildComponent()">Show/Hide</button>
+      <div *ngIf="childComponentVisible">
+        <app-child></app-child>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>

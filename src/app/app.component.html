@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+<div>
+  <span>{{currentDateTime}}</span>
+</div>
+
+<button (click)="showHideParentComponent()">Show/Hide</button>
+<div *ngIf="parentComponentVisible">
+  <app-parent></app-parent>
+</div>
